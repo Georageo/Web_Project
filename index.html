@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog On a Lease</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="nav_box1">
+        <a class="tab1"> Log in </a>
+        <a class="tab1"> About us </a>
+        <a class="tab1"> Our Customers </a>
+        <a class="tab1"> FAQ </a>
+
+    </div>
+    <div id="inside1">
+        <div id="blankbox1"> blank box 1 <br> </div>
+        <div id="blankbox2"> blank box 2<br> </div>
+        <div id="logo_box1">
+            <h1 id="h1">Dog on a Lease</h1>
+            <div id="logo1"> Edw tha mpei to logo</div>
+        </div>
+        <div id="sign_in_initial"> 
+            <h2 id="initial_message1"> Leasing as easy as walking your dog to the park  </h2>
+            <h3 id="initial_message2"> Choose a dog ... oops , we mean a car , today - right now</h3>
+            <div><button class="to_sign_in" type="button" onclick="FirstAnimation()"> Sign In</button></div>
+
+        </div>
+        <div id="sign_in" style="display: none;">
+            <h2 id="sign_in_title"> Sign In </h2>
+            <div id="credentials1">
+                <label id="label_for_username"  for="username"> Username </label>
+                <input type="text" id="username" name="username" required placeholder="*Bark!*"/>
+                
+                <label id="label_for_password" for="password"> Password </label>
+                <input type="password" id="password" name="password" required placeholder="*Woof!*"/>
+            </div>
+            <div id="si_b"><button class="sign_in_button" type="button" > Sign In</button></div>
+            <div id="r_b"><button class="to_registration" type="button" onclick="SecondAnimation()"> Register </button></div>
+
+        </div>
+        <div id="register_page" style="display: none;">
+            <h2 id="register_title"> Sign Up </h2>
+            <div id="credentials2">
+                <label id="label_for_username2"  for="username2"> Username </label>
+                <input type="text" id="username2" name="username2" required placeholder="*Bark!*"/>
+                <label id="label_for_fn" for="fn"> First Name </label>
+                <input type="text" id="fn" name="fn" required placeholder="*Max*"/>
+                <label id="label_for_ln" for="ln"> Last Name </label>
+                <input type="text" id="ln" name="ln" required placeholder="*The Dog*"/>
+                <label id="label_for_email" for="email"> Email </label>
+                <input type="email" id="email" name="email"  required placeholder="*doggo@bark.com*"/>
+                <label id="label_for_password2" for="password2"> Password </label>
+                <input type="password" id="password2" name="password2" required placeholder="*Woof!*"/>
+                <label id="label_for_firm" for="firms"> Workplace </label>
+                <select name="firms" id="firms">
+                    <option value="">--Please choose your Workplace--</option>
+                    <option value="firm_1">Firm 1</option>
+                    <option value="firm_2">Firm 2</option>
+                    <option value="firm_3">Firm 3</option>
+                    <option value="firm_4">Firm 4</option>
+                </select>
+            </div>
+            <div id="r_b2"><button class="register_button2" type="button" > Sign Up</button></div>
+            <div id="si_b2"><button class="to_sign_in2" type="button" onclick="ThirdAnimation()"> Sign In </button></div>
+
+
+        </div>
+        <div id="blankbox3"> blank box 3<br> </div>
+        <div id="blankbox4"> blank box 4<br> </div>
+
+
+    </div>
+    <div class="footer1">
+        <p id="footerheader" class="tab2"> Contact us </p>
+        <p id="email" class="tab2"> /image/ dogonalease@org.com</p>
+        <p id="tel" class="tab2"> /image/ +30  x xxx xxxx </p>
+        <!--insta and facebook images-->
+        <a id="instagram" class="tab2">/image/</a>
+        <a id="facebook" class="tab2">/image/</a>
+
+
+    </div>
+    
+</body>
+</html>
