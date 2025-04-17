@@ -8,7 +8,8 @@
     
 </head>
 <body>
-    <script src="index.js"></script>
+    
+
     <div class="nav_box1">
         <a class="tab1"> Log in </a>
         <a class="tab1"> About us </a>
@@ -26,7 +27,7 @@
         <div id="sign_in_initial"> 
             <h2 id="initial_message1"> Leasing as easy as walking your dog to the park  </h2>
             <h3 id="initial_message2"> Choose a dog ... oops , we mean a car , today - right now</h3>
-            <div><button class="to_sign_in" type="button" onclick="FirstAnimation()"> Sign In</button></div>
+            <div><button id="button1" class="to_sign_in" type="button" > Sign In</button></div>
 
         </div>
         <div id="sign_in" style="display: none;">
@@ -39,7 +40,7 @@
                 <input type="password" id="password" name="password" required placeholder="*Woof!*"/>
             </div>
             <div id="si_b"><button class="sign_in_button" type="button" > Sign In</button></div>
-            <div id="r_b"><button class="to_registration" type="button" onclick="SecondAnimation()"> Register </button></div>
+            <div id="r_b"><button class="to_registration" type="button" > Register </button></div>
 
         </div>
         <div id="register_page" style="display: none;">
@@ -58,14 +59,14 @@
                 <label id="label_for_firm" for="firms"> Workplace </label>
                 <select name="firms" id="firms">
                     <option value="">--Please choose your Workplace--</option>
-                    <option value="firm_1">Firm 1</option>
-                    <option value="firm_2">Firm 2</option>
-                    <option value="firm_3">Firm 3</option>
-                    <option value="firm_4">Firm 4</option>
+                    <option value="Firm 1">Firm 1</option>
+                    <option value="Firm 2">Firm 2</option>
+                    <option value="Firm 3">Firm 3</option>
+                    <option value="Firm 4">Firm 4</option>
                 </select>
             </div>
-            <div id="r_b2"><button class="register_button2" type="button" > Sign Up</button></div>
-            <div id="si_b2"><button class="to_sign_in2" type="button" onclick="ThirdAnimation()"> Sign In </button></div>
+            <div id="r_b2"><button class="register_button2" type="button"  > Sign Up</button></div>
+            <div id="si_b2"><button class="to_sign_in2" type="button" > Sign In </button></div>
 
 
         </div>
@@ -84,6 +85,8 @@
 
 
     </div>
-    
+    <script type="module" src="index.js">
+        import { FirstAnimation } from './index.js';
+    </script>
 </body>
 </html>
