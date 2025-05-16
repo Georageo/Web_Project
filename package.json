@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^5.1.0",
     "sqlite3": "^5.1.7"
   },
   "name": "dogonalease",
   "version": "1.0.0",
-  "type":"module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
