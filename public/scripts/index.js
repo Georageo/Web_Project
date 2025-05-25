@@ -58,9 +58,10 @@
         const fn = document.getElementById('fn').value;
         const ln = document.getElementById('ln').value;
         const workplace = document.getElementById('firms').value;
+        const years = document.getElementById('years').value;
         const register=1;
         const log_in=0;
-        
+        let class_ ;
         const data = {
             username: username,
             password: password,
@@ -68,7 +69,9 @@
             firstName: fn,
             lastName: ln,
             workplace: workplace,
-            register: register
+            register: register,
+            years: years,
+            class_:class_
         };
     
         
@@ -93,6 +96,10 @@
                 console.log(localStorage.getItem('username'));
                 localStorage.setItem('workplace', workplace);
                 console.log(localStorage.getItem('workplace'));
+                localStorage.setItem('years', years);
+                console.log(localStorage.getItem('years'));
+                localStorage.setItem('class_', data.class_);
+                console.log(localStorage.getItem('class_'));
 
                 window.location.href = '/profile';
             if (data.error) {
@@ -137,13 +144,14 @@
         const usernamesn = document.getElementById('username').value;
         const register=0;
         const log_in=1;
+        let class_;
     
         
         const data = {
             usernamesn: usernamesn,
             passwordsn: passwordsn,
-            log_in: log_in
-
+            log_in: log_in,
+            class_: class_
         };
     
         
@@ -169,6 +177,10 @@
                 console.log(localStorage.getItem('username'));
                 localStorage.setItem('workplace', data.workplace);
                 console.log(localStorage.getItem('workplace'));
+                localStorage.setItem('years', data.years);
+                console.log(localStorage.getItem('years'));
+                localStorage.setItem('class_', data.class_);
+                console.log(localStorage.getItem('class_'));
 
                 window.location.href = '/profile';
                 }

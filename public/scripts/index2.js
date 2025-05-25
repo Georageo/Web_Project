@@ -26,6 +26,8 @@ function complete_profile(){
     const email = localStorage.getItem('email');
     const username = localStorage.getItem('username');
     const workplace = localStorage.getItem('workplace');
+    const years = localStorage.getItem('years');
+    const class_ = localStorage.getItem('class_');
     const a = document.getElementById("profilename_title");
     a.textContent=`${fn} ${ln}`;
     const b = document.getElementById("username_profile");
@@ -34,6 +36,10 @@ function complete_profile(){
     c.textContent=`Email: ${email}`;
     const d = document.getElementById("workplace_profile");
     d.textContent=`Workplace: ${workplace}`;
+    const e = document.getElementById("years_profile");
+    e.textContent=`Years Working: ${years}`;
+    const f = document.getElementById("class_profile");
+    f.textContent=`Class: ${class_}`;
 
 }
 
