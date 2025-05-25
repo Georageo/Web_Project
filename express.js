@@ -21,36 +21,45 @@ app.get('/', (req, res) => {
 app.get('/profile', (req, res) => {
     res.sendFile(path.join(__dirname,'public', 'firstpage.html'));
 });
+app.get('/rent', (req, res) => {
+    res.sendFile(path.join(__dirname,'public', 'rent_page.html'));
+});
+
 
 
 
 
 app.post('/', async (req, res) => {
     const { register, log_in } = req.body;
-
+    
     
     if (register === 1) {
-        const { username, password, email, firstName, lastName, workplace } = req.body;
-
+        const { username, password, email, firstName, lastName, workplace, years } = req.body;
+        let class_;
         try {
             const hashedPassword = await bcrypt.hash(password, 10);
-
+            if(years>7){
+                class_  = 2;
+            }
+            else{
+                class_ = 1;
+            }
             const query = `
-                INSERT INTO User (username, password, email, first_name, last_name, workplace)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO User (username, password, email, first_name, last_name, workplace, years,class)
+                VALUES (?, ?, ?, ?, ?, ?,?,?)
             `;
 
-            DB.run(query, [username, hashedPassword, email, firstName, lastName, workplace], function (err) {
+            DB.run(query, [username, hashedPassword, email, firstName, lastName, workplace, years, class_], function (err) {
                 if (err) {
                     console.error('Database error:', err.message);
                     return res.status(500).json({ error: 'Failed to register user.' });
                 }
 
-                res.status(200).json({ message: `User ${username} registered successfully!`});
+                res.status(200).json({ message: `User ${username} registered successfully!`, class_:class_});
             });
 
         } catch (err) {
-            console.error('Hashing error:', err.message);
+            console.error(err.message);
             res.status(500).json({ error: 'Error hashing password.' });
         }
     }
@@ -76,7 +85,7 @@ app.post('/', async (req, res) => {
 
             if (isMatch) {
                 console.log("successful login")
-                res.status(200).json({ message: 'Login successful!',first_name: row.first_name,last_name:row.last_name,username:row.username,email:row.email,workplace:row.workplace });
+                res.status(200).json({ message: 'Login successful!',first_name: row.first_name,last_name:row.last_name,username:row.username,email:row.email,workplace:row.workplace, years:row.years,class_:row.class});
             } else {
                 console.log("password not found");
                 res.status(401).json({ error: 'Invalid username or password.' });
