@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog On a Lease</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="car_details.css">
+    
+</head>
+<body>
+    
+
+    <div class="nav_box2">
+        <a id="logo_cropped2" class="tab2"><img id="logo_for_nav2" src="./cropped_image.png"></a>
+        <a id="myprofile_nav" class="tab2"> My Profile </a>
+        <a id="MyContract_nav"class="tab2"> My Contract</a>
+        <a id="Rent_a_car_nav" class="tab2"> Rent a Car</a>
+        <a id="log_out_nav" class="tab2"> Log out</a>
+    </div>
+
+    <section class="cardet__container" id="car-details">
+      <div class="single_car_details">
+        <h4 id="class_car"></h4>
+        <h2 id="model_car"></h2>
+        <br><h4>Car Characteristics</h4>
+        <span>
+            <em id="model_type"></em> <br>
+            <em id="car_color"></em><br>
+            <em id="car_cc"></em><br>
+            <em id="avg_cons_car"></em><br>
+            
+        </span>
+
+        
+      </div>
+      </div>
+    </section>
+
+    
+
+    
+        
+    <form id="form_rent" action="POST">
+        <div class="form_container" >
+                <h2 id="form_title"> Fill out all the blank spaces </h2>
+                <div id="credentials2">
+                    <label id="label_for_start_date" for="start_date_form"> Start Date </label>
+                    <input type="date" id="start_date_form"  class="input_for_reg" name="start_date_form" required placeholder="Start Date"/>
+                    <label id="label_for_end_date" for="end_date_form"> End Date </label>
+                    <input type="date" id="end_date_form"  class="input_for_reg" name="end_date_form" required placeholder="End date"/>
+                    <label id="label_for_pick_up"  for="pickup_loc"> Pick up Location </label>
+                    <select name="pickup_loc" id="pickup_loc"  class="input_for_reg">
+                        <option value="">--Please choose--</option>
+                        <option value="Pickup_george">Georgiopoulos Ent.</option>
+                        <option value="Pickup_zagk">Zagkos Ent.</option>
+                        <option value="Pickup_hmty">HMTY Services</option>
+                    </select>
+                    <label id="label_for_drop_off"  for="dropoff_loc"> Drop Off Location </label>
+                    <select name="dropoff_loc" id="dropoff_loc"  class="input_for_reg">
+                        <option value="">--Please choose--</option>
+                        <option value="Dropoff_george">Georgiopoulos Ent.</option>
+                        <option value="Dropoff_zagk">Zagkos Ent.</option>
+                        <option value="Dropoff_hmty">HMTY Services</option>
+                    </select>
+
+                    
+                </div>
+                <div id="submit_btn2" ><button  class="submit_button2" type="button" id="button_for_con" > Submit woof!</button></div>
+                
+
+
+            </div>
+        
+    </section>
+    <div class="footer1">
+        <p id="footerheader" class="tab2"> Contact us </p>
+        <p id="email" class="tab2">dogonalease@org.com</p>
+        <p id="tel" class="tab2"> +30  x xxx xxxx </p>
+        <!--insta and facebook images-->
+        <a id="instagram" href="https://www.instagram.com" class="tab2"><img id="instagram_pic" src="./instalogo.png"></a>
+        <a id="facebook" href="https://www.facebook.com" class="tab2"><img id="instagram_pic" src="./fblogo.png"></a>
+
+
+    </div>
+    
+    <script type="module" src="scripts/index4.js">
+      
+    </script>
+    
+</body>
+</html>

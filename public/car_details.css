@@ -1,0 +1,106 @@
+.cardet__container{
+    display: flex;
+  align-items: center;
+  justify-content: center
+  
+  
+}
+#car-details .cardet__img{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#car-details{
+    display: flex;
+    column-gap: normal;
+    
+    
+}
+
+#car-details .single_car_details{
+    padding-top: 30px;
+    float: left;
+    
+}
+
+#car-details .single_car_details h4{
+    padding: 20px 0 20px 0;
+}
+
+#car-details .single_car_details h2{
+    font-size: 26px;
+}
+
+#car-details .single_car_details span{
+    line-height: 25px;
+}
+
+.form_container{
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+
+    margin-bottom: 80px;
+
+
+}
+
+
+#label_for_start_date, #label_for_end_date, #label_for_pick_up, #label_for_drop_off{ 
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-weight:bold;
+    font-size:large;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.input_for_reg {
+    text-align: center;
+    width: 70%;
+    margin: 0 0 1rem 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input_for_reg:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+#submit_btn2{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.submit_button2 {
+    
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.submit_button2:hover{
+    background-color: rgb(110, 110, 110);
+}

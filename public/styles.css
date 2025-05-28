@@ -764,17 +764,6 @@ body, html {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     
 }
-#car_summary>*{
-    border: 2px solid black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    
-    margin: 15px;
-    font-size: 20px;
-    
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    
-}
 #car_summary{
     border: 3px solid black;
     width: 190%;

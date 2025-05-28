@@ -167,6 +167,7 @@
             
             const a = document.getElementById("sign_in");
             if (data.message === 'Login successful!') {
+                localStorage.clear();
                 localStorage.setItem('first_name', data.first_name);
                 console.log(localStorage.getItem('first_name'));
                 localStorage.setItem('email', data.email);
@@ -179,9 +180,29 @@
                 console.log(localStorage.getItem('workplace'));
                 localStorage.setItem('years', data.years);
                 console.log(localStorage.getItem('years'));
-                localStorage.setItem('class_', data.class_);
-                console.log(localStorage.getItem('class_'));
-
+                localStorage.setItem('class_user', data.class_user);
+                console.log(localStorage.getItem('class_user'));
+                localStorage.setItem('start_date', data.start_date);
+                console.log(localStorage.getItem('start_date'));
+                localStorage.setItem('end_date', data.end_date);
+                console.log(localStorage.getItem('end_date'));
+                localStorage.setItem('pick_up', data.pick_up);
+                console.log(localStorage.getItem('pick_up'));
+                localStorage.setItem('drop_off', data.drop_off);
+                console.log(localStorage.getItem('drop_off'));
+                localStorage.setItem('car_cc', data.car_cc);
+                console.log(localStorage.getItem('car_cc'));
+                localStorage.setItem('car_type', data.car_type);
+                console.log(localStorage.getItem('car_type'));
+                localStorage.setItem('car_model_name', data.car_model_name);
+                console.log(localStorage.getItem('car_model_name'));
+                localStorage.setItem('car_color', data.car_color);
+                console.log(localStorage.getItem('car_color'));
+                localStorage.setItem('car_avg_c', data.car_avg_c);
+                console.log(localStorage.getItem('car_avg_c'));
+                localStorage.setItem('car_class', data.car_class);
+                console.log(localStorage.getItem('car_class'));
+                
                 window.location.href = '/profile';
                 }
             
@@ -267,9 +288,9 @@
             console.log("to faq");
             scrol_to_section("page4");
         });
-
-        
     });
+        
+
 
     function scrol_to_section(id) {
         document.getElementById(id).scrollIntoView({
